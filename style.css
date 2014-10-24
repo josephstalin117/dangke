@@ -1,0 +1,157 @@
+@CHARSET "UTF-8";
+*{
+    margin:0;
+    padding:0;
+}
+img{
+    border:none;
+}
+li{
+    list-style:none;	
+}
+body{
+    background-color:#c80000;
+}
+a:link, a:visited{
+    color:#00f;
+}
+a:hover{
+    color:#006;
+}
+/*登陆页面*/
+.index_img{
+    margin:0 auto;
+    margin-top:40px;
+    height:166px;
+    width:642px;
+    padding-left:40px;
+    background:url(style/image/main_img.jpg) no-repeat;
+}
+.index_container{
+    width:100%;
+    height:220px;
+    background:url("style/login_background.jpg") repeat-x;
+}
+.login_container{
+    margin:0 auto;
+    width:300px;
+}
+.message_container{
+    height:30px;
+    line-height:30px;
+    margin-left:10px;
+    color:#F00;
+    font-size:12px;
+}
+.input_text{
+    width:210px; 
+    height:36px;
+    font-size:16px;
+    border:solid #ccc 1px;
+    margin-left:20px;
+    background:#FFF;
+}
+
+
+
+/*用户界面*/
+.top { 
+    width: 100%; 
+    height:35px;
+    display: block; 
+    z-index: 100; 
+    overflow: visible; 
+    position: fixed; 
+    top: 0px; /* position fixed for IE6 */ 
+    _position: absolute; 
+    //_top: expression(documentElement.scrollTop + "px"); 
+
+    line-height:35px; 
+    background-color:#f6f6f6;
+    border-bottom:solid 1px #ccc; 
+    font-size:15px;
+    text-align:center;	
+    position:fixed;
+} 
+.head_img{
+    margin:0 auto;
+    margin-top:30px;
+    height:90px;
+    width:900px;
+    padding-left:40px;
+    background:url(style/image/main_img.jpg) no-repeat left -70px;
+}
+.contain{
+    margin:0 auto;
+    /*margin-top:30px;*/
+    width:900px;
+    overflow:hidden;
+    padding:6px;
+    background:#FFF;
+    border:#CCC solid 6px;
+    min-height:500px;
+}
+.sideBar{
+    float:left;
+    width:220px;
+    border:solid 1px #eee;
+    font-family:Microsoft Yahei, Helvetica, sans-serif;
+    font-weight:lighter;
+}
+.menu ul{
+    width:220px;
+}
+.menu ul li{
+    width:200px;
+    margin:0 auto;
+}
+.menu ul li a{
+    float:left;
+    width:200px;
+    text-align:center;
+    line-height:40px;
+    text-decoration:none;
+    border-bottom:#f0f0f0 solid 1px;
+}
+.menu ul li a:hover{
+    /*text-decoration:underline;*/
+    background:#fafaff;
+    border-bottom:#09F solid 1px;
+}
+.main{
+    float:right;
+    width:650px;
+    border-left:solid 1px #eee;
+    min-height:570px;
+    font-size:14px;
+    color:#333;
+    padding-left:16px;
+}
+.main{
+    line-height:28px;
+}
+.main li img{
+    padding:5px;
+    background:#f2f2f2;
+}
+.main li p{
+    text-align:center;
+}
+.title{
+    width:570px;
+    height:30px;
+    line-height:26px;
+    color:#999;
+    font-size:14px;
+    padding-left:73px;
+    background:url(style/image/title_bg.gif);
+}
+#video{
+    margin:0 auto;
+}
+
+/*考试页面*/
+.exam_page{
+    padding-left:10px;
+    line-height:26px;
+}

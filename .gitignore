@@ -1,0 +1,11 @@
+# video
+video/*
+
+# upload
+upload/*
+
+# nbproject
+nbproject
+
+# excel
+library/upload
