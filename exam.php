@@ -115,23 +115,24 @@ if ($userInfo['JUDGE_ID'])
                         }
                         ?>
                     <?php } ?>
-                    <? if(isset($multi_id)){?>
-                    <?php echo $title[$titleCount++] ?>、选择题（本大题答案选项有可能是一个或者若干个，选错或者漏选不得分，每小题<?php echo $config_exam["multi_sorce"]; ?>分，共<?php echo $config_exam["multi_num"]; ?>题）。<br />
-                    <?php
-                    $i = 0;
-                    $inputID = 0;
-                    while ($multi_id[$i]) {
-                        $sql = "select * from multi_selections where ID='$multi_id[$i]'";
-                        $db->query($sql);
-                        $row = $db->getrow();
-                        echo ($i + 1) . '、' . $row["QUESTION"] . '<br />';
-                        echo "<input id=n$inputID type=\"checkbox\" name=\"multi$i" . "[]\" value=\"A\">&nbsp;A:&nbsp;$row[OPTION_A]<br />";
-                        echo "<input id=n$inputID type=\"checkbox\" name=\"multi$i" . "[]\" value=\"B\">&nbsp;B:&nbsp;$row[OPTION_B]<br />";
-                        echo "<input id=n$inputID type=\"checkbox\" name=\"multi$i" . "[]\" value=\"C\">&nbsp;C:&nbsp;$row[OPTION_C]<br />";
-                        echo "<input id=n$inputID type=\"checkbox\" name=\"multi$i" . "[]\" value=\"D\">&nbsp;D:&nbsp;$row[OPTION_D]<br />";
-                        echo "<br />";
-                        $i++;
-                        $inputID++;
+                    <?php if (isset($multi_id)) { ?>
+                        <?php echo $title[$titleCount++] ?>、选择题（本大题答案选项有可能是一个或者若干个，选错或者漏选不得分，每小题<?php echo $config_exam["multi_sorce"]; ?>分，共<?php echo $config_exam["multi_num"]; ?>题）。<br />
+                        <?php
+                        $i = 0;
+                        $inputID = 0;
+                        while ($multi_id[$i]) {
+                            $sql = "select * from multi_selections where ID='$multi_id[$i]'";
+                            $db->query($sql);
+                            $row = $db->getrow();
+                            echo ($i + 1) . '、' . $row["QUESTION"] . '<br />';
+                            echo "<input id=n$inputID type=\"checkbox\" name=\"multi$i" . "[]\" value=\"A\">&nbsp;A:&nbsp;$row[OPTION_A]<br />";
+                            echo "<input id=n$inputID type=\"checkbox\" name=\"multi$i" . "[]\" value=\"B\">&nbsp;B:&nbsp;$row[OPTION_B]<br />";
+                            echo "<input id=n$inputID type=\"checkbox\" name=\"multi$i" . "[]\" value=\"C\">&nbsp;C:&nbsp;$row[OPTION_C]<br />";
+                            echo "<input id=n$inputID type=\"checkbox\" name=\"multi$i" . "[]\" value=\"D\">&nbsp;D:&nbsp;$row[OPTION_D]<br />";
+                            echo "<br />";
+                            $i++;
+                            $inputID++;
+                        }
                     }
                     ?>
                     <?php if (isset($judge_id)) { ?>
@@ -233,7 +234,7 @@ if ($userInfo["EXAM_SCHEDULE"] != NULL) {
                 function selectInstall() {
                     for (var i = 0; i < document.exam.length; i++)
                     {
-                        //		examInstallStr.charAt(i);
+                        //examInstallStr.charAt(i);
                         if (examInstallStr.charAt(i) == "1")
                             document.exam.elements[i].checked = true;
                     }

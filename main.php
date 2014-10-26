@@ -127,26 +127,26 @@ switch ($action) {
 
         <?php
         $videoLearned = explode(",", $userInfo["VIDEO_LEARNED"]);
-        $sql = "select ID from video where 1=1";
+//        $sql = "select ID from video where 1=1";
         if ((count($videoLearned) - 1) >= 3) {
+            //student's EXAM_
             if ($userInfo["EXAM_END_TIME"] == NULL) {
-                echo "<a href=exam_before.php?chapter=1>&gt;&gt;&gt;第一章考试</a>";
-                echo "<a href=exam_before.php?chapter=2>&gt;&gt;&gt;第二章考试</a>";
-                echo "<a href=exam_before.php?chapter=3>&gt;&gt;&gt;第三章考试</a>";
-                echo "<a href=exam_before.php?chapter=4>&gt;&gt;&gt;第四章考试</a>";
-                echo "<a href=exam_before.php?chapter=5>&gt;&gt;&gt;第五章考试</a>";
-                echo "<a href=exam_before.php?chapter=6>&gt;&gt;&gt;第六章考试</a>";
-                echo "<a href=exam_before.php?chapter=7>&gt;&gt;&gt;第七章考试</a>";
-                echo "<a href=exam_before.php?chapter=8>&gt;&gt;&gt;第八章考试</a>";
-                echo "<a href=exam_before.php?chapter=9>&gt;&gt;&gt;第九章考试</a>";
+                for ($n = 1; $n < 10; $n++) {
+                    //TO-do 已考完的章节不在此列
+                    echo "<a href=exam_before.php?chapter='$n'>&gt;&gt;&gt;第'$n'章考试</a><br/>";
+                }
             } else if ($userInfo["STU_SCO"] == NULL && time() < ($userInfo["EXAM_END_TIME"] + 600)) {
                 echo "<a href=selectexam.php>&gt;&gt;&gt;继续考试</a>";
             } else if ($userInfo["STU_SCO"] == NULL && time() > ($userInfo["EXAM_END_TIME"] + 600)) {
-                echo '<font color="#FF0000">考试时间已过期，无法继续考试！</font>';
+                echo '<font color="#FF0000">考试时间已到，无法继续考试！</font>';
             }
         } else {
             echo '<font color="#FF0000">您还有未完成的学习内容，完成之后才能开始考试！</font>';
         }
         break;
 }
+
+//function checkExamQualification($videoLearned,$examEndTime,) {
+    
+//}
 ?>

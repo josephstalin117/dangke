@@ -1,0 +1,503 @@
+2014-10-24 13:49:56 查询 SELECT * FROM stuinfo WHERE 1=1 AND STU_NUM = '123' AND STU_PSW = '123' order by ID desc
+2014-10-24 13:49:56 更新 update stuinfo set LOG_IP = '::1;::1;::1;::1;::1',LOG_TIMES = '5' where 1=1 and ID='1'
+2014-10-24 13:49:56 查询 update stuinfo set LOG_IP = '::1;::1;::1;::1;::1',LOG_TIMES = '5' where 1=1 and ID='1'
+2014-10-24 13:49:56 释放结果集
+2014-10-24 13:49:56 完成整个查询任务,所用时间为0.0058150291442871
+2014-10-24 13:49:56 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-24 13:49:56 查询 select * from video where 1=1
+2014-10-24 13:49:56 释放结果集
+2014-10-24 13:49:56 完成整个查询任务,所用时间为0.0054981708526611
+2014-10-24 13:49:58 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-24 13:49:58 释放结果集
+2014-10-24 13:49:58 完成整个查询任务,所用时间为0.0040431022644043
+2014-10-24 13:50:39 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-24 13:50:39 释放结果集
+2014-10-24 13:50:39 完成整个查询任务,所用时间为0.0031909942626953
+2014-10-24 13:50:47 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-24 13:50:47 释放结果集
+2014-10-24 13:50:47 完成整个查询任务,所用时间为0.0044128894805908
+2014-10-24 13:50:47 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-24 13:50:47 释放结果集
+2014-10-24 13:50:47 完成整个查询任务,所用时间为0.0029549598693848
+2014-10-24 13:51:35 查询 SELECT * FROM admin WHERE USER_NUM = 'admin' AND USER_PSW = 'admin'
+2014-10-24 13:51:35 更新 update admin set LOG_IP = '127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;10.10.10.30;10.10.10.30;10.10.10.30;10.10.10.30;10.10.10.30;10.10.10.30;10.10.10.30;10.10.10.30;127.0.0.1;10.10.10.30;172.16.55.15;10.10.10.30;10.10.10.30;10.10.10.30;172.16.79.229;10.10.10.48;10.20.201.237;::1;::1',LOG_TIMES = '51' where 1=1 and ID='1'
+2014-10-24 13:51:35 查询 update admin set LOG_IP = '127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;127.0;127.0.0.1;127.0.0.1;127.0.0.1;127.0.0.1;10.10.10.30;10.10.10.30;10.10.10.30;10.10.10.30;10.10.10.30;10.10.10.30;10.10.10.30;10.10.10.30;127.0.0.1;10.10.10.30;172.16.55.15;10.10.10.30;10.10.10.30;10.10.10.30;172.16.79.229;10.10.10.48;10.20.201.237;::1;::1',LOG_TIMES = '51' where 1=1 and ID='1'
+2014-10-24 13:51:35 释放结果集
+2014-10-24 13:51:35 释放结果集
+2014-10-24 13:51:35 完成整个查询任务,所用时间为0.056434154510498
+2014-10-24 13:51:35 查询 SELECT * FROM admin WHERE ID = '1'
+2014-10-24 13:51:35 查询 select STU_DEP from stuinfo where 1=1 group by STU_DEP
+2014-10-24 13:51:35 查询 select EXAM_YEAR from stuinfo where 1=1 group by EXAM_YEAR
+2014-10-24 13:51:35 查询 select * from stuinfo where 1=1 and EXAM_YEAR='' and STU_DEP=''
+2014-10-24 13:51:35 释放结果集
+2014-10-24 13:51:35 完成整个查询任务,所用时间为0.013866901397705
+2014-10-24 13:51:41 查询 SELECT * FROM admin WHERE ID = '1'
+2014-10-24 13:51:41 释放结果集
+2014-10-24 13:51:41 完成整个查询任务,所用时间为0.0051021575927734
+2014-10-24 13:51:50 查询 SELECT * FROM admin WHERE ID = '1'
+2014-10-24 13:51:50 释放结果集
+2014-10-24 13:51:50 完成整个查询任务,所用时间为0.0052142143249512
+2014-10-24 13:51:50 查询 SELECT * FROM admin WHERE ID = '1'
+2014-10-24 13:51:50 释放结果集
+2014-10-24 13:51:50 完成整个查询任务,所用时间为0.0037491321563721
+2014-10-24 13:51:55 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-24 13:51:55 释放结果集
+2014-10-24 13:51:55 完成整个查询任务,所用时间为0.0040509700775146
+2014-10-24 13:51:56 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-24 13:51:56 释放结果集
+2014-10-24 13:51:56 完成整个查询任务,所用时间为0.0031979084014893
+2014-10-24 13:51:57 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-24 13:51:57 释放结果集
+2014-10-24 13:51:57 完成整个查询任务,所用时间为0.0034160614013672
+2014-10-24 13:53:27 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-24 13:53:33 释放结果集
+2014-10-24 13:53:33 完成整个查询任务,所用时间为5.6442439556122
+2014-10-24 14:04:43 查询 SELECT * FROM stuinfo WHERE 1=1 AND STU_NUM = '123' AND STU_PSW = '123' order by ID desc
+2014-10-24 14:04:43 更新 update stuinfo set LOG_IP = '::1;::1;::1;::1;::1;::1',LOG_TIMES = '6' where 1=1 and ID='1'
+2014-10-24 14:04:43 查询 update stuinfo set LOG_IP = '::1;::1;::1;::1;::1;::1',LOG_TIMES = '6' where 1=1 and ID='1'
+2014-10-24 14:04:43 释放结果集
+2014-10-24 14:04:43 完成整个查询任务,所用时间为0.0038051605224609
+2014-10-24 14:04:43 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-24 14:04:43 查询 select * from video where 1=1
+2014-10-24 14:04:43 释放结果集
+2014-10-24 14:04:43 完成整个查询任务,所用时间为0.0063180923461914
+2014-10-24 14:04:45 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-24 14:05:07 释放结果集
+2014-10-24 14:05:07 完成整个查询任务,所用时间为22.383662939072
+2014-10-26 08:59:32 查询 SELECT * FROM stuinfo WHERE 1=1 AND STU_NUM = '123' AND STU_PSW = '123' order by ID desc
+2014-10-26 08:59:32 更新 update stuinfo set LOG_IP = '::1;::1;::1;::1;::1;::1;::1',LOG_TIMES = '7' where 1=1 and ID='1'
+2014-10-26 08:59:32 查询 update stuinfo set LOG_IP = '::1;::1;::1;::1;::1;::1;::1',LOG_TIMES = '7' where 1=1 and ID='1'
+2014-10-26 08:59:32 释放结果集
+2014-10-26 08:59:32 完成整个查询任务,所用时间为0.005652904510498
+2014-10-26 08:59:32 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 08:59:32 查询 select * from video where 1=1
+2014-10-26 08:59:32 释放结果集
+2014-10-26 08:59:32 完成整个查询任务,所用时间为0.0061020851135254
+2014-10-26 08:59:40 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 08:59:40 释放结果集
+2014-10-26 08:59:40 完成整个查询任务,所用时间为0.0030989646911621
+2014-10-26 09:02:17 查询 SELECT * FROM stuinfo WHERE 1=1 AND STU_NUM = '123' AND STU_PSW = '123' order by ID desc
+2014-10-26 09:02:17 更新 update stuinfo set LOG_IP = '::1;::1;::1;::1;::1;::1;::1;::1',LOG_TIMES = '8' where 1=1 and ID='1'
+2014-10-26 09:02:17 查询 update stuinfo set LOG_IP = '::1;::1;::1;::1;::1;::1;::1;::1',LOG_TIMES = '8' where 1=1 and ID='1'
+2014-10-26 09:02:17 释放结果集
+2014-10-26 09:02:17 完成整个查询任务,所用时间为0.014222145080566
+2014-10-26 09:02:17 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:02:17 查询 select * from video where 1=1
+2014-10-26 09:02:17 释放结果集
+2014-10-26 09:02:17 完成整个查询任务,所用时间为0.0058379173278809
+2014-10-26 09:02:19 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:02:19 释放结果集
+2014-10-26 09:02:19 完成整个查询任务,所用时间为0.013875007629395
+2014-10-26 09:02:21 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:02:21 释放结果集
+2014-10-26 09:02:21 完成整个查询任务,所用时间为0.0033519268035889
+2014-10-26 09:02:29 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:02:29 释放结果集
+2014-10-26 09:02:29 完成整个查询任务,所用时间为0.0030820369720459
+2014-10-26 09:05:49 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:05:50 释放结果集
+2014-10-26 09:05:50 完成整个查询任务,所用时间为0.17377305030823
+2014-10-26 09:06:04 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:06:04 释放结果集
+2014-10-26 09:06:04 完成整个查询任务,所用时间为0.003154993057251
+2014-10-26 09:06:07 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:06:07 释放结果集
+2014-10-26 09:06:07 完成整个查询任务,所用时间为0.0035028457641602
+2014-10-26 09:07:09 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:07:09 释放结果集
+2014-10-26 09:07:09 完成整个查询任务,所用时间为0.0065648555755615
+2014-10-26 09:07:21 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:07:21 释放结果集
+2014-10-26 09:07:21 完成整个查询任务,所用时间为0.0065059661865234
+2014-10-26 09:09:33 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:09:33 释放结果集
+2014-10-26 09:09:33 完成整个查询任务,所用时间为0.038172960281372
+2014-10-26 09:10:15 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:10:15 释放结果集
+2014-10-26 09:10:15 完成整个查询任务,所用时间为0.013836860656738
+2014-10-26 09:10:16 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:10:16 释放结果集
+2014-10-26 09:10:16 完成整个查询任务,所用时间为0.0032520294189453
+2014-10-26 09:16:45 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:16:45 释放结果集
+2014-10-26 09:16:45 完成整个查询任务,所用时间为0.0041429996490479
+2014-10-26 09:16:45 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:16:45 释放结果集
+2014-10-26 09:16:45 完成整个查询任务,所用时间为0.0042760372161865
+2014-10-26 09:16:46 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:16:46 释放结果集
+2014-10-26 09:16:46 完成整个查询任务,所用时间为0.0047240257263184
+2014-10-26 09:17:00 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:17:00 释放结果集
+2014-10-26 09:17:00 完成整个查询任务,所用时间为0.0038549900054932
+2014-10-26 09:17:01 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:17:01 释放结果集
+2014-10-26 09:17:01 完成整个查询任务,所用时间为0.0040609836578369
+2014-10-26 09:17:02 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:17:02 释放结果集
+2014-10-26 09:17:02 完成整个查询任务,所用时间为0.0045900344848633
+2014-10-26 09:17:02 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:17:02 释放结果集
+2014-10-26 09:17:02 完成整个查询任务,所用时间为0.0043959617614746
+2014-10-26 09:17:02 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:17:02 释放结果集
+2014-10-26 09:17:02 完成整个查询任务,所用时间为0.0050101280212402
+2014-10-26 09:17:02 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:17:02 释放结果集
+2014-10-26 09:17:02 完成整个查询任务,所用时间为0.0052618980407715
+2014-10-26 09:17:02 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:17:02 释放结果集
+2014-10-26 09:17:02 完成整个查询任务,所用时间为0.0047900676727295
+2014-10-26 09:17:18 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:17:18 释放结果集
+2014-10-26 09:17:18 完成整个查询任务,所用时间为0.002788782119751
+2014-10-26 09:17:33 查询 SELECT * FROM stuinfo WHERE 1=1 AND STU_NUM = '123' AND STU_PSW = '123' order by ID desc
+2014-10-26 09:17:33 更新 update stuinfo set LOG_IP = '::1;::1;::1;::1;::1;::1;::1;::1;::1',LOG_TIMES = '9' where 1=1 and ID='1'
+2014-10-26 09:17:33 查询 update stuinfo set LOG_IP = '::1;::1;::1;::1;::1;::1;::1;::1;::1',LOG_TIMES = '9' where 1=1 and ID='1'
+2014-10-26 09:17:33 释放结果集
+2014-10-26 09:17:33 完成整个查询任务,所用时间为0.0044209957122803
+2014-10-26 09:17:33 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:17:33 查询 select * from video where 1=1
+2014-10-26 09:17:33 释放结果集
+2014-10-26 09:17:33 完成整个查询任务,所用时间为0.0066630840301514
+2014-10-26 09:17:34 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:17:34 释放结果集
+2014-10-26 09:17:34 完成整个查询任务,所用时间为0.0032100677490234
+2014-10-26 09:17:36 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:17:36 释放结果集
+2014-10-26 09:17:36 完成整个查询任务,所用时间为0.003978967666626
+2014-10-26 09:20:24 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:20:24 释放结果集
+2014-10-26 09:20:24 完成整个查询任务,所用时间为0.0070419311523438
+2014-10-26 09:20:24 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:20:24 释放结果集
+2014-10-26 09:20:24 完成整个查询任务,所用时间为0.0031709671020508
+2014-10-26 09:20:25 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:20:25 释放结果集
+2014-10-26 09:20:25 完成整个查询任务,所用时间为0.0033278465270996
+2014-10-26 09:20:25 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:20:25 释放结果集
+2014-10-26 09:20:25 完成整个查询任务,所用时间为0.0031270980834961
+2014-10-26 09:20:25 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:20:25 释放结果集
+2014-10-26 09:20:25 完成整个查询任务,所用时间为0.0029590129852295
+2014-10-26 09:20:25 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:20:25 释放结果集
+2014-10-26 09:20:25 完成整个查询任务,所用时间为0.0032169818878174
+2014-10-26 09:20:26 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:20:26 释放结果集
+2014-10-26 09:20:26 完成整个查询任务,所用时间为0.0033318996429443
+2014-10-26 09:20:27 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:20:27 释放结果集
+2014-10-26 09:20:27 完成整个查询任务,所用时间为0.0034058094024658
+2014-10-26 09:20:38 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:20:38 释放结果集
+2014-10-26 09:20:38 完成整个查询任务,所用时间为0.0026941299438477
+2014-10-26 09:20:51 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:20:51 释放结果集
+2014-10-26 09:20:51 完成整个查询任务,所用时间为0.0029251575469971
+2014-10-26 09:21:21 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:21:21 释放结果集
+2014-10-26 09:21:21 完成整个查询任务,所用时间为0.0033199787139893
+2014-10-26 09:21:30 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:21:30 释放结果集
+2014-10-26 09:21:30 完成整个查询任务,所用时间为0.0029048919677734
+2014-10-26 09:22:07 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:22:07 释放结果集
+2014-10-26 09:22:07 完成整个查询任务,所用时间为0.0032339096069336
+2014-10-26 09:22:19 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:22:19 释放结果集
+2014-10-26 09:22:19 完成整个查询任务,所用时间为0.0036740303039551
+2014-10-26 09:22:19 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:22:19 释放结果集
+2014-10-26 09:22:19 完成整个查询任务,所用时间为0.0028350353240967
+2014-10-26 09:22:20 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:22:20 释放结果集
+2014-10-26 09:22:20 完成整个查询任务,所用时间为0.0025498867034912
+2014-10-26 09:23:53 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:23:53 释放结果集
+2014-10-26 09:23:53 完成整个查询任务,所用时间为0.0031929016113281
+2014-10-26 09:23:57 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:23:57 释放结果集
+2014-10-26 09:23:57 完成整个查询任务,所用时间为0.0031650066375732
+2014-10-26 09:23:58 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:23:58 释放结果集
+2014-10-26 09:23:58 完成整个查询任务,所用时间为0.0027451515197754
+2014-10-26 09:23:58 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:23:58 释放结果集
+2014-10-26 09:23:58 完成整个查询任务,所用时间为0.0031239986419678
+2014-10-26 09:23:58 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:23:58 释放结果集
+2014-10-26 09:23:58 完成整个查询任务,所用时间为0.0029799938201904
+2014-10-26 09:23:58 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:23:58 释放结果集
+2014-10-26 09:23:58 完成整个查询任务,所用时间为0.0031630992889404
+2014-10-26 09:23:59 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:23:59 释放结果集
+2014-10-26 09:23:59 完成整个查询任务,所用时间为0.0031161308288574
+2014-10-26 09:24:14 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:24:14 释放结果集
+2014-10-26 09:24:14 完成整个查询任务,所用时间为0.0034050941467285
+2014-10-26 09:24:16 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:24:16 释放结果集
+2014-10-26 09:24:16 完成整个查询任务,所用时间为0.0028650760650635
+2014-10-26 09:24:17 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:24:17 释放结果集
+2014-10-26 09:24:17 完成整个查询任务,所用时间为0.0029289722442627
+2014-10-26 09:24:17 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:24:17 释放结果集
+2014-10-26 09:24:17 完成整个查询任务,所用时间为0.0028669834136963
+2014-10-26 09:24:17 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:24:17 释放结果集
+2014-10-26 09:24:17 完成整个查询任务,所用时间为0.0030288696289062
+2014-10-26 09:24:17 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 09:24:17 释放结果集
+2014-10-26 09:24:17 完成整个查询任务,所用时间为0.0031728744506836
+2014-10-26 10:37:25 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 10:37:25 释放结果集
+2014-10-26 10:37:25 完成整个查询任务,所用时间为0.0032739639282227
+2014-10-26 10:37:25 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='386'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='389'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='369'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='361'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='370'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='374'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='420'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='407'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='402'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='400'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='445'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='427'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='446'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='441'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='462'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='485'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='478'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='467'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='452'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='472'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='510'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='495'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='490'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='497'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='535'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='548'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='516'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='559'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='547'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='518'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='555'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='519'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='585'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='597'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='572'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='586'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='591'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='573'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='589'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='608'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='625'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='602'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='624'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='600'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='598'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='642'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='637'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='644'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='634'
+2014-10-26 10:37:25 查询 select * from multi_selections where ID='659'
+2014-10-26 10:37:25 释放结果集
+2014-10-26 10:37:25 完成整个查询任务,所用时间为0.035404920578003
+2014-10-26 10:37:26 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='386' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='389' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='369' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='361' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='370' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='374' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='420' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='407' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='402' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='400' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='445' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='427' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='446' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='441' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='462' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='485' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='478' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='467' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='452' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='472' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='510' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='495' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='490' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='497' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='535' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='548' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='516' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='559' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='547' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='518' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='555' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='519' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='585' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='597' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='572' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='586' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='591' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='573' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='589' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='608' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='625' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='602' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='624' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='600' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='598' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='642' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='637' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='644' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='634' and ANSWER=''
+2014-10-26 10:37:26 查询 select ANSWER from multi_selections where ID='659' and ANSWER=''
+2014-10-26 10:37:26 更新 update stuinfo set SELECT_MULTI = ',,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,',SELECT_JUDGE = null,STU_OTHER = 'time_out',EXAM_PASS_TIME = '1414291046',STU_SCO = null where 1=1 and ID=1
+2014-10-26 10:37:26 查询 update stuinfo set SELECT_MULTI = ',,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,',SELECT_JUDGE = null,STU_OTHER = 'time_out',EXAM_PASS_TIME = '1414291046',STU_SCO = null where 1=1 and ID=1
+2014-10-26 10:37:26 释放结果集
+2014-10-26 10:37:26 完成整个查询任务,所用时间为0.088176012039185
+2014-10-26 10:37:31 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 10:37:31 查询 select * from video where 1=1
+2014-10-26 10:37:31 释放结果集
+2014-10-26 10:37:31 完成整个查询任务,所用时间为0.0076818466186523
+2014-10-26 10:37:34 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 10:37:34 释放结果集
+2014-10-26 10:37:34 完成整个查询任务,所用时间为0.003148078918457
+2014-10-26 10:37:36 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 10:37:36 释放结果集
+2014-10-26 10:37:36 完成整个查询任务,所用时间为0.0033068656921387
+2014-10-26 10:37:37 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 10:37:37 释放结果集
+2014-10-26 10:37:37 完成整个查询任务,所用时间为0.0030131340026855
+2014-10-26 10:37:37 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='386'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='389'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='369'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='361'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='370'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='374'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='420'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='407'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='402'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='400'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='445'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='427'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='446'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='441'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='462'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='485'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='478'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='467'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='452'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='472'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='510'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='495'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='490'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='497'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='535'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='548'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='516'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='559'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='547'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='518'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='555'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='519'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='585'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='597'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='572'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='586'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='591'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='573'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='589'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='608'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='625'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='602'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='624'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='600'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='598'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='642'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='637'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='644'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='634'
+2014-10-26 10:37:37 查询 select * from multi_selections where ID='659'
+2014-10-26 10:37:37 释放结果集
+2014-10-26 10:37:37 完成整个查询任务,所用时间为0.032116174697876
+2014-10-26 10:37:37 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='386' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='389' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='369' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='361' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='370' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='374' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='420' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='407' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='402' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='400' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='445' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='427' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='446' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='441' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='462' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='485' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='478' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='467' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='452' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='472' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='510' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='495' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='490' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='497' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='535' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='548' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='516' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='559' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='547' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='518' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='555' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='519' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='585' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='597' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='572' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='586' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='591' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='573' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='589' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='608' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='625' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='602' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='624' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='600' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='598' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='642' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='637' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='644' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='634' and ANSWER=''
+2014-10-26 10:37:37 查询 select ANSWER from multi_selections where ID='659' and ANSWER=''
+2014-10-26 10:37:37 更新 update stuinfo set SELECT_MULTI = ',,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,',SELECT_JUDGE = null,STU_OTHER = 'time_out',EXAM_PASS_TIME = '1414291057',STU_SCO = null where 1=1 and ID=1
+2014-10-26 10:37:37 查询 update stuinfo set SELECT_MULTI = ',,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,',SELECT_JUDGE = null,STU_OTHER = 'time_out',EXAM_PASS_TIME = '1414291057',STU_SCO = null where 1=1 and ID=1
+2014-10-26 10:37:37 释放结果集
+2014-10-26 10:37:37 完成整个查询任务,所用时间为0.052418947219849
+2014-10-26 10:37:39 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 10:37:39 查询 select * from video where 1=1
+2014-10-26 10:37:39 释放结果集
+2014-10-26 10:37:39 完成整个查询任务,所用时间为0.0074050426483154
+2014-10-26 10:56:13 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 10:56:13 释放结果集
+2014-10-26 10:56:13 完成整个查询任务,所用时间为0.0037901401519775
+2014-10-26 10:56:14 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 10:56:14 释放结果集
+2014-10-26 10:56:14 完成整个查询任务,所用时间为0.0035429000854492
+2014-10-26 10:56:14 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 10:56:14 释放结果集
+2014-10-26 10:56:14 完成整个查询任务,所用时间为0.0032749176025391
+2014-10-26 10:56:14 查询 SELECT * FROM stuinfo WHERE ID = '1'
+2014-10-26 10:56:14 释放结果集
+2014-10-26 10:56:14 完成整个查询任务,所用时间为0.0034599304199219
