@@ -81,7 +81,10 @@ if ($userInfo['JUDGE_ID'])
         <!-- 顶部 -->
         <div class="top">
             <script type="text/javascript">showLocale();</script>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            剩余时间：<span id="time"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎您，<?php echo $userInfo["STU_NAME"]; ?>&nbsp;&nbsp;
+            剩余时间：
+            <!--Time left-->
+            <span id="time"></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎您，<?php echo $userInfo["STU_NAME"]; ?>&nbsp;&nbsp;
             <a href="logout.php" onclick="if (!confirm('确定要离开当前页面？请务必在<?php echo date("Y-m-d H:i:s", $userInfo['EXAM_END_TIME']); ?>前再次登录并提交试卷，过期没有成绩！'))
                         return false;">退出</a>
         </div>
@@ -165,13 +168,16 @@ if ($userInfo['JUDGE_ID'])
         <!--倒计时,保存进度-->
         <script type="text/javascript" src="js/jquery-1.4.2.min.js" mce_src="js/jquery-1.4.2.min.js"></script>
         <script LANGUAGE="javascript">
-                <!--
-        var total = (<?php echo ($userInfo["EXAM_END_TIME"] - time()); ?>);
+                //show time left
+                var total = (<?php echo ($userInfo["EXAM_END_TIME"] - time()); ?>);
                 var examNow = "";
                 var examOld = "";
+                //?
                 var instal = 0;
+                //?
                 var examInstallStr = "";
 <?php
+//exam schedule 考试进度
 if ($userInfo["EXAM_SCHEDULE"] != NULL) {
     echo "examInstallStr=\"$userInfo[EXAM_SCHEDULE]\";";
     echo "selectInstall();";
@@ -180,33 +186,30 @@ if ($userInfo["EXAM_SCHEDULE"] != NULL) {
                 var installTime = new Date();
                 var t0 = installTime.getTime();
                 showTime();
-                function showTime()
-                {
+                function showTime() {
                     total--;
                     var sec = total % 60;
                     var mins = parseInt(total / 60);
-                    if (mins > 0)
+                    if (mins > 0) {
                         document.getElementById("time").innerHTML = mins + "分" + sec + "秒";
-                    else if (total >= 0)
+                    } else if (total >= 0) {
                         document.getElementById("time").innerHTML = sec + "秒";
-                    else
+                    } else {
                         document.getElementById("time").innerHTML = "时间到，正在提交！";
-                    if (total > 0)
-                    {
-                        setTimeout("showTime()", 1000);//每一秒钟执行一次检查
-                        inputCheck();
                     }
-                    else
-                    {
+                    if (total > 0) {
+                        //A check is performed every second
+                        setTimeout("showTime()", 1000);
+                        inputCheck();
+                    } else {
                         document.exam.submit();
                     }
                 }
 
-
-                function inputCheck() {		//保存考试进度
+                //save exam progress
+                function inputCheck() {
                     examNow = '';
-                    for (var i = 0; i < document.exam.length; i++)
-                    {
+                    for (var i = 0; i < document.exam.length; i++) {
                         if (document.exam.elements[i].checked == true) {
                             examNow += "1";
                         } else {
@@ -217,11 +220,13 @@ if ($userInfo["EXAM_SCHEDULE"] != NULL) {
                         examOld = examNow;
                         instal++;
                     }
-                    if (examNow != examOld)
+                    if (examNow != examOld) {
                         postdata();
+                    }
                     examOld = examNow;
                 }
 
+                //ajax
                 function postdata() {
                     var str = "schedule=" + examNow;
                     $.ajax({
@@ -232,14 +237,12 @@ if ($userInfo["EXAM_SCHEDULE"] != NULL) {
                 }
 
                 function selectInstall() {
-                    for (var i = 0; i < document.exam.length; i++)
-                    {
+                    for (var i = 0; i < document.exam.length; i++) {
                         //examInstallStr.charAt(i);
                         if (examInstallStr.charAt(i) == "1")
                             document.exam.elements[i].checked = true;
                     }
                 }
--->
         </script>
     </body>
 </html>
