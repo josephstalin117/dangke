@@ -126,27 +126,107 @@ switch ($action) {
         <p>4、若在线考试过程中遇到断网、机器故障等问题，可以通过其他机器登陆系统，若您尚未超过交卷时间，则可以继续考试，并且试卷和做题记录会自动恢复。若超过交卷时间，则无法继续考试。</p>
 
         <?php
-        $videoLearned = explode(",", $userInfo["VIDEO_LEARNED"]);
-//        $sql = "select ID from video where 1=1";
-        if ((count($videoLearned) - 1) >= 3) {
-            //student's EXAM_
-            if ($userInfo["EXAM_END_TIME"] == NULL) {
-                for ($n = 1; $n < 10; $n++) {
-                    //TO-do 已考完的章节不在此列
-                    echo "<a href=exam_before.php?chapter='$n'>&gt;&gt;&gt;第'$n'章考试</a><br/>";
+//        $videoLearned = explode(",", $userInfo["VIDEO_LEARNED"]);
+////        $sql = "select ID from video where 1=1";
+//        if ((count($videoLearned) - 1) >= 3) {
+//            //student's EXAM
+//
+//            if ($userInfo["EXAM_END_TIME"] == NULL) {
+//                for ($n = 1; $n < 10; $n++) {
+//                    //TO-do 已考完的章节不在此列
+//                    //echo "<a href=exam_before.php?chapter='$n'>&gt;&gt;&gt;第'$n'章考试</a><br/>";
+//                    echo "<a href=exam/examBefore.php?chapter='$n'>&gt;&gt;&gt;第'$n'章考试</a><br/>";
+//                }
+//            } else if ($userInfo["STU_SCO"] == NULL && time() < ($userInfo["EXAM_END_TIME"] + 600)) {
+//                echo "<a href=selectexam.php>&gt;&gt;&gt;继续考试</a>";
+//            } else if ($userInfo["STU_SCO"] == NULL && time() > ($userInfo["EXAM_END_TIME"] + 600)) {
+//                echo '<font color="#FF0000">考试时间已到，无法继续考试！</font>';
+//            }
+//        } else {
+//            echo '<font color="#FF0000">您还有未完成的学习内容，完成之后才能开始考试！</font>';
+//        }
+        $stuCheck = new stuCheck();
+
+        //check the video learned
+        $videoCheck = $stuCheck->videoCheck($userInfo["VIDEO_LEARNED"]);
+        if ($videoCheck == FALSE) {
+            $endTimeCheck = $stuCheck->endTimeCheck($userInfo["PAPER_MD5"], $db);
+            //if end time exist
+            if ($endTimeCheck === TRUE) {
+                echo "<a href=exam/selectexam.php>&gt;&gt;&gt;继续考试</a>";
+            } elseif ($endTimeCheck == FALSE) {
+                $chap = $stuCheck->showChapter($userInfo["EXAM_CHAP"]);
+                foreach ($chap as $key => $value) {
+                    echo "<a href=exam/examBefore.php?chapter='$value'>&gt;&gt;&gt;第'$value'章考试</a><br/>";
                 }
-            } else if ($userInfo["STU_SCO"] == NULL && time() < ($userInfo["EXAM_END_TIME"] + 600)) {
-                echo "<a href=selectexam.php>&gt;&gt;&gt;继续考试</a>";
-            } else if ($userInfo["STU_SCO"] == NULL && time() > ($userInfo["EXAM_END_TIME"] + 600)) {
-                echo '<font color="#FF0000">考试时间已到，无法继续考试！</font>';
+            } else {
+                echo '<font color="#FF0000">' . $endTimeCheck . '</font></br>';
+                $chap = $stuCheck->showChapter($userInfo["EXAM_CHAP"]);
+                foreach ($chap as $key => $value) {
+                    echo "<a href=exam/examBefore.php?chapter='$value'>&gt;&gt;&gt;第'$value'章考试</a><br/>";
+                }
             }
         } else {
-            echo '<font color="#FF0000">您还有未完成的学习内容，完成之后才能开始考试！</font>';
+            echo '<font color="#FF0000">' . $videoCheck . '</font>';
         }
+
         break;
 }
 
-//function checkExamQualification($videoLearned,$examEndTime,) {
-    
-//}
+class stuCheck {
+
+    function videoCheck($videoLearnd) {
+        $videos = explode(",", $videoLearnd);
+        try {
+            if ((count($videos) - 1) >= 3) {
+                return FALSE;
+            } else {
+                throw new Exception('您还有未完成的学习内容，完成之后才能开始考试！');
+            }
+        } catch (Exception $ex) {
+            return $ex->getMessage();
+        }
+    }
+
+    function endTimeCheck($paperId, $db) {
+        try {
+            if ($paperId) {
+                $sql = "select * from exam where PAPER_MD5='$paperId'";
+                $db->query($sql);
+                $exam = $db->getrow();
+                if ($exam["EXAM_END_TIME"] != NULL) {
+                    //continue exam
+                    if ($exam["EXAM_SCORE"] == NULL && time() < ($exam["EXAM_END_TIME"] + 600)) {
+                        return TRUE;
+                    } elseif ($exam["EXAM_SCORE"] == NULL && time() >= ($exam["EXAM_END_TIME"] + 600)) {
+                        throw new Exception("考试时间已到，无法继续考试！");
+                    }
+                } else {
+                    return FALSE;
+                }
+            } else {
+                return FALSE;
+            }
+        } catch (Exception $ex) {
+            return $ex->getMessage();
+        }
+    }
+
+    //show the chapter
+    function showChapter($chapter) {
+        try {
+            $chapterComplete = explode(",", $chapter);
+            $chapterAll = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+            $result = array_diff($chapterAll, $chapterComplete);
+            if ($result) {
+                return $result;
+            } else {
+                throw new Exception("您的考试已经全部完成");
+            }
+        } catch (Exception $ex) {
+            return $ex->getMessage();
+        }
+    }
+
+}
 ?>

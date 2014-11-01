@@ -1,10 +1,14 @@
 <?php
 require_once 'logincheck.php';
 require_once 'config/config.exam.php';
+
+//check student's score
 if ($userInfo["STU_SCO"] != NULL) {
     header("Location: user.php?action=5 ");
     exit();
 }
+
+//check student's paper
 if (!($userInfo["SINGLE_ID"] || $userInfo["MULTI_ID"] || $userInfo["JUDGE_ID"])) {
     header("Location: user.php?action=5 ");
     exit();
@@ -227,6 +231,7 @@ if ($userInfo["EXAM_SCHEDULE"] != NULL) {
                 }
 
                 //ajax
+                //update the check option data
                 function postdata() {
                     var str = "schedule=" + examNow;
                     $.ajax({
@@ -236,11 +241,13 @@ if ($userInfo["EXAM_SCHEDULE"] != NULL) {
                     });
                 }
 
+                //restore the check option
                 function selectInstall() {
                     for (var i = 0; i < document.exam.length; i++) {
                         //examInstallStr.charAt(i);
-                        if (examInstallStr.charAt(i) == "1")
+                        if (examInstallStr.charAt(i) == "1") {
                             document.exam.elements[i].checked = true;
+                        }
                     }
                 }
         </script>

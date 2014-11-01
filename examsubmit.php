@@ -19,14 +19,24 @@ $userInfo = $db->getrow();
 $isLogin = true;
 $_SESSION['userID'] = $userInfo["ID"];
 require_once 'config/config.exam.php';
-if (!($userInfo["SINGLE_ID"] || $userInfo["MULTI_ID"] || $userInfo["JUDGE_ID"]))
+
+//验证是否存在题号
+if (!($userInfo["SINGLE_ID"] || $userInfo["MULTI_ID"] || $userInfo["JUDGE_ID"])) {
     exit();
-if (!isset($_POST["sure"])) //确保页面由exam提交
+}
+
+//确保页面由exam提交
+if (!isset($_POST["sure"])) {
     exit();
+}
+
+//是否成绩已存在
 if ($userInfo["STU_SCO"] != NULL) {
     echo '您的试卷已提交，请勿重复提交！';
     exit();
 }
+
+
 //计算最终成绩
 $score = 0;
 //单选题
@@ -54,6 +64,7 @@ if ($config_exam['multi_num']) {
     $multiID = explode(",", $userInfo["MULTI_ID"]);
     $i = 0;
     while ($multiID[$i]) {
+        //存在问题？？
         $sql = "select ANSWER from multi_selections where ID='$multiID[$i]' and ANSWER='$multiAnswer[$i]'";
         $db->query($sql);
         if ($db->getrow()) {
